@@ -9,30 +9,32 @@
       font-family: sans-serif;
       padding: 2em;
     }
-    a.install-button {
+    button#install {
       display: inline-block;
       background: #007aff;
       color: white;
-      font-size: 1.2em;
-      padding: 0.5em 1em;
+      font-size: 1.3em;
+      padding: 0.6em 1.2em;
+      border: none;
       border-radius: 6px;
-      text-decoration: none;
+      cursor: pointer;
     }
-    a.install-button:active {
+    button#install:active {
       opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <h1>تثبيت “الناخب الرقمي”</h1>
-  <p>اضغط على الزر أدناه لبدء التثبيت:</p>
-  <p>
-    <a
-      class="install-button"
-      href="itms-services://?action=download-manifest&amp;url=https://dl.dropboxusercontent.com/scl/fi/dvme63n36xe8sqa5yihsc/manifest.plist?rlkey=0wn0uqno2wvuqdb1mxr6f9dbl&amp;st=d7oebfb9&amp;dl=1"
-    >
-      تثبيت التطبيق
-    </a>
-  </p>
+  <p> :Pاضغط الزر لبدء التثبيت:</p>
+  <button id="install">تثبيت التطبيق</button>
+
+  <script>
+    document.getElementById('install').addEventListener('click', function() {
+      // Replace the newlines/spaces with your exact one-line manifest URL:
+      var manifestUrl = 'https://dl.dropboxusercontent.com/scl/fi/5p74pin5w9iawyzddjj2g/manifest.plist?rlkey=0wn0uqno2wvuqdb1mxr6f9dbl&amp;st=d7oebfb9&amp;dl=1';
+      window.location.href = 'itms-services://?action=download-manifest&url=' + manifestUrl;
+    });
+  </script>
 </body>
 </html>
