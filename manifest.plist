@@ -13,7 +13,7 @@
           <string>software-package</string>
           <key>url</key>
           <!-- your IPA URL on GitHub Pages -->
-          <string>https://hisham2630.github.io/nakheb_raqami_app/docs/Runner.ipa</string>
+          <string>https://hisham2630.github.io/nakheb-raqami-ota/Runner.ipa</string>
         </dict>
       </array>
       <key>metadata</key>
