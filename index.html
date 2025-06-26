@@ -4,20 +4,35 @@
   <meta charset="utf-8">
   <title>تثبيت الناخب الرقمي</title>
   <style>
-    body { text-align:center; font-family:sans-serif; padding:2em; }
-    button {
-      font-size:1.2em; padding:0.5em 1em;
-      border:none; border-radius:4px;
-      background:#007aff; color:white;
-      cursor:pointer;
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      padding: 2em;
+    }
+    a.install-button {
+      display: inline-block;
+      background: #007aff;
+      color: white;
+      font-size: 1.2em;
+      padding: 0.5em 1em;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    a.install-button:active {
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <h1>تثبيت “الناخب الرقمي”</h1>
   <p>اضغط على الزر أدناه لبدء التثبيت:</p>
-  <a href="itms-services://?action=download-manifest&amp;url=https://dl.dropboxusercontent.com/scl/fi/dvme63n36xe8sqa5yihsc/manifest.plist?rlkey=0wn0uqno2wvuqdb1mxr6f9dbl&amp;st=d7oebfb9&amp;dl=1">
-    <button>تثبيت التطبيق</button>
-  </a>
+  <p>
+    <a
+      class="install-button"
+      href="itms-services://?action=download-manifest&amp;url=https://dl.dropboxusercontent.com/scl/fi/dvme63n36xe8sqa5yihsc/manifest.plist?rlkey=0wn0uqno2wvuqdb1mxr6f9dbl&amp;st=d7oebfb9&amp;dl=1"
+    >
+      تثبيت التطبيق
+    </a>
+  </p>
 </body>
 </html>
