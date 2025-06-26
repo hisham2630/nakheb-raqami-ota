@@ -12,19 +12,15 @@
           <key>kind</key>
           <string>software-package</string>
           <key>url</key>
-          <!-- your IPA URL on GitHub Pages -->
           <string>https://hisham2630.github.io/nakheb-raqami-ota/Runner.ipa</string>
         </dict>
       </array>
       <key>metadata</key>
       <dict>
-        <!-- Must match CFBundleIdentifier -->
         <key>bundle-identifier</key>
-        <string>com.yourcompany.al-nakhb-al-raqami</string>
-        <!-- Must match CFBundleShortVersionString -->
+        <string>com.nomor.nakhebRaqamiApp</string>
         <key>bundle-version</key>
         <string>1.0.0</string>
-        <!-- Friendly name shown on install dialog -->
         <key>title</key>
         <string>الناخب الرقمي</string>
       </dict>
